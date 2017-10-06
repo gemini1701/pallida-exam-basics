@@ -1,5 +1,7 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class UniqueChars {
     public static void main(String[] args) {
@@ -11,12 +13,12 @@ public class UniqueChars {
         // ["n", "g", "r", "m"]
     }
 
-    public static ArrayList<String> uniqueCharacters(String input) {
-        ArrayList<String> temp = new ArrayList<>();
-        ArrayList<String> result = new ArrayList<>();
+    public static ArrayList<Character> uniqueCharacters(String input) {
+        ArrayList<Character> temp = new ArrayList<>();
+        ArrayList<Character> result = new ArrayList<>();
 
         for (int i = 0; i < input.length(); i++) {
-            temp.get(input.charAt(i));
+            temp.add(input.charAt(i));
         }
 
        Collections.sort(temp);
