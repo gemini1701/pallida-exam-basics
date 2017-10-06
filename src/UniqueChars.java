@@ -9,18 +9,18 @@ public class UniqueChars {
        System.out.println(uniqueCharacters("anagram"));
         // Should print out:
         // ["n", "g", "r", "m"]
-
     }
 
-    public static ArrayList<Character> uniqueCharacters(String input) {
-        ArrayList<Character> temp = new ArrayList<>();
-        ArrayList<Character> result = new ArrayList<>();
-
+    public static ArrayList<String> uniqueCharacters(String input) {
+        ArrayList<String> temp = new ArrayList<>();
+        ArrayList<String> result = new ArrayList<>();
 
         for (int i = 0; i < input.length(); i++) {
             temp.get(input.charAt(i));
         }
+
         Collections.sort(temp);
+
         for (int i = 0; i < temp.size(); i++) {
             if (temp.get(i) != temp.get(i-1)) {
                 result.add(temp.get(i));

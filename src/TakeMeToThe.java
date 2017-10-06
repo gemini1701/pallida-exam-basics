@@ -1,4 +1,4 @@
- public class TakeMeToThe {
+public class TakeMeToThe {
 
     public static void main(String[] args) {
 
@@ -38,7 +38,7 @@
 
         // "Inventory: 3 candies, 2 lollipops, Income: 100, Sugar: 400gr"
 
-        candyShop = new CandyShop(300);
+        CandyShop candyShop = new CandyShop(300);
 
         candyShop.createSweets(CandyShop.CANDY);
 
