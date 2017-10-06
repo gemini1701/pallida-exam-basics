@@ -6,6 +6,7 @@ public class CandyShop {
     public static String LOLLIPOP;
     int sugarAmount;
     int sugarBuy;
+    int sugarNeed;
     int moneyAmount;
     int moneyIncome;
     int candyPrice;
@@ -14,27 +15,26 @@ public class CandyShop {
     public CandyShop(int sugarAmount){
         this.sugarAmount = sugarAmount;
 
-        Candies CANDY = new Candies("CANDY");
+        Candies CANDY = new Candies("CANDY", 10, 20);
 
       ArrayList<CandyShop> candyShop = new ArrayList<>(sugarAmount);
-
     }
 
     public void createSweets(String candyName){
-
+        sugarAmount -= sugarNeed;
     }
 
     public void raise(int candyPrice){
-        candyPrice+=1;
+        candyPrice += 1;
     }
 
     public void buySugar(int sugarBuy){
-        sugarAmount+=sugarBuy;
+        sugarAmount += sugarBuy;
     }
 
 
     public void sell(String candy, int moneyIncome) {
-        moneyAmount+=moneyIncome;
-    }
+        moneyAmount += moneyIncome;
     }
 }
+

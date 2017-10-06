@@ -9,6 +9,7 @@ public class UniqueCharsTest {
         assertEquals("n,g,r,m", "n,g,r,m");
     }
 
+    @org.junit.Test
     public void uniqueCharacters1() throws Exception {
         String test = "anagram";
         assertEquals("n,g,r,m", "n,g,r,v");

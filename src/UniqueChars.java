@@ -19,9 +19,9 @@ public class UniqueChars {
             temp.get(input.charAt(i));
         }
 
-        Collections.sort(temp);
+       Collections.sort(temp);
 
-        for (int i = 0; i < temp.size(); i++) {
+        for (int i = 1; i < temp.size(); i++) {
             if (temp.get(i) != temp.get(i-1)) {
                 result.add(temp.get(i));
             }
